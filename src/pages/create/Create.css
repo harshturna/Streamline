@@ -1,0 +1,16 @@
+.create-form {
+  max-width: 600px;
+  padding-bottom: 4.2rem;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .create-form {
+    font-size: 0.7em;
+  }
+}
