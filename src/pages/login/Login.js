@@ -7,11 +7,19 @@ import "./Login.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isDemoClicked, setIsDemoClicked] = useState(false);
+  const [isLoginClicked, setIsLoginClicked] = useState(false);
   const { login, isPending, error } = useLogin();
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
+    setIsLoginClicked(true);
     login(email, password);
+  };
+
+  const demoButtonHandler = () => {
+    setIsDemoClicked(true);
+    login("aloy@email.com", "aloy1180");
   };
 
   return (
@@ -38,12 +46,26 @@ const Login = () => {
         />
       </label>
 
-      {!isPending && <button className="btn">Login</button>}
-      {isPending && (
-        <button className="btn" disabled>
-          Loading...
-        </button>
-      )}
+      <div className="btn-container">
+        {!isPending && !isDemoClicked && <button className="btn">Login</button>}
+        {isPending && !isDemoClicked && (
+          <button className="btn" disabled>
+            Loading...
+          </button>
+        )}
+
+        {!isPending && !isLoginClicked && (
+          <button className="btn" type="button" onClick={demoButtonHandler}>
+            Demo App
+          </button>
+        )}
+        {isPending && !isLoginClicked && (
+          <button className="btn demo-loading" disabled>
+            Loading...
+          </button>
+        )}
+      </div>
+
       {error && <div className="error">{error}</div>}
     </form>
   );
