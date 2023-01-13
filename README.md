@@ -20,7 +20,7 @@
   - ##### From the dashboard, users can view a list of all active app users on the desktop version of the application. This feature is currently not available for mobile version.
   
 #### Project Page
-  - ##### The individual project pages provide a more detailed view of each project; the project page displays pertinent information including the project title, description, and due date, as well as the details of the creator and assignee."
+  - ##### The individual project pages provide a more detailed view of each project; the project page displays pertinent information including the project title, description, and due date, as well as the details of the creator and assignee.
   
   - ##### The project creator has the ability to mark a project as complete from the project page.
   
