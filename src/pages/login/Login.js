@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLogin } from "../../hooks/useLogin";
 
 // styles
@@ -21,6 +21,13 @@ const Login = () => {
     setIsDemoClicked(true);
     login("aloy@email.com", "aloy1180");
   };
+
+  useEffect(() => {
+    if (error) {
+      setIsDemoClicked(false);
+      setIsLoginClicked(false);
+    }
+  }, [error]);
 
   return (
     <form className="auth-form" onSubmit={formSubmitHandler}>

@@ -30,7 +30,7 @@ const Create = () => {
   const { documents } = useCollection("users");
   const { user } = useAuthContext();
   const { addDocument, response } = useFirestore("projects");
-  const { isPending, error, success } = response;
+  const { isPending, error } = response;
 
   const history = useHistory();
 
@@ -107,12 +107,19 @@ const Create = () => {
         </label>
 
         <label>
-          <span>Project Details</span>
-          <textarea
-            required
-            type="text"
-            onChange={(e) => setDetails(e.target.value)}
-            value={details}
+          <span>Assign to</span>
+          <Select
+            options={users}
+            onChange={(option) => setAssignedUsers(option)}
+            isMulti
+          />
+        </label>
+
+        <label>
+          <span>Project Category</span>
+          <Select
+            options={categories}
+            onChange={(option) => setCategory(option)}
           />
         </label>
 
@@ -127,18 +134,12 @@ const Create = () => {
         </label>
 
         <label>
-          <span>Project Category</span>
-          <Select
-            options={categories}
-            onChange={(option) => setCategory(option)}
-          />
-        </label>
-        <label>
-          <span>Assign to</span>
-          <Select
-            options={users}
-            onChange={(option) => setAssignedUsers(option)}
-            isMulti
+          <span>Project Details</span>
+          <textarea
+            required
+            type="text"
+            onChange={(e) => setDetails(e.target.value)}
+            value={details}
           />
         </label>
 
