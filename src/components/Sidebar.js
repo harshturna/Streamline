@@ -9,7 +9,7 @@ import AddIcon from "../assets/add_icon.svg";
 // components
 import Avatar from "./Avatar";
 
-// TODO: FIX: The sidebar should not collapse when visible on larger screens -> Repro steps: go to a single project page, the sidebar collapses for some of them.
+// TODO: FIX: The sidebar should not collapse when visible on larger screens -> Repro steps: go to a single project page, the sidebar collapses for some of them. Example - https://streamline-7e36a.web.app/projects/U5Q96PkPRMjqWgS9ybg1
 
 const Sidebar = () => {
   const { user } = useAuthContext();
