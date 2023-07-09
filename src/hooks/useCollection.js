@@ -35,7 +35,7 @@ export const useCollection = (collection, _query, _orderBy) => {
       }
     );
 
-    // unsubscribe on unmount
+    // CLEANUP: unsubscribe on unmount
     return () => unsubscribe();
   }, [collection, query, orderBy]);
 
