@@ -34,7 +34,7 @@ const Login = () => {
       <h2>Login</h2>
 
       <label>
-        <span>email:</span>
+        <span>Email</span>
         <input
           type="email"
           required
@@ -44,7 +44,7 @@ const Login = () => {
       </label>
 
       <label>
-        <span>password:</span>
+        <span>Password</span>
         <input
           type="password"
           required

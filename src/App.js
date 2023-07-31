@@ -13,6 +13,7 @@ import Project from "./pages/project/Project";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import OnlineUser from "./components/OnlineUser";
+import Landing from "./pages/landing/Landing";
 
 function App() {
   const { user, authIsReady } = useAuthContext();
@@ -27,21 +28,28 @@ function App() {
             <Switch>
               <Route path="/" exact>
                 {user && <Dashboard />}
-                {!user && <Redirect to="/login" />}
+                {!user && <Redirect to="/landing" />}
               </Route>
             </Switch>
 
             <Switch>
               <Route path="/create">
                 {user && <Create />}
-                {!user && <Redirect to="/login" />}
+                {!user && <Redirect to="/landing" />}
               </Route>
             </Switch>
 
             <Switch>
               <Route path="/projects/:id">
                 {user && <Project />}
-                {!user && <Redirect to="/login" />}
+                {!user && <Redirect to="/landing" />}
+              </Route>
+            </Switch>
+
+            <Switch>
+              <Route path="/landing">
+                {!user && <Landing />}
+                {user && <Redirect to="/" />}
               </Route>
             </Switch>
 

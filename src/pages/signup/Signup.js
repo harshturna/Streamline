@@ -46,7 +46,7 @@ const Signup = () => {
       <h2>Sign up</h2>
 
       <label>
-        <span>display name:</span>
+        <span>Display Name</span>
         <input
           type="text"
           required
@@ -56,7 +56,7 @@ const Signup = () => {
       </label>
 
       <label>
-        <span>email:</span>
+        <span>Email</span>
         <input
           type="email"
           required
@@ -66,7 +66,7 @@ const Signup = () => {
       </label>
 
       <label>
-        <span>password:</span>
+        <span>Password</span>
         <input
           type="password"
           required
@@ -76,7 +76,7 @@ const Signup = () => {
       </label>
 
       <label>
-        <span>profile thumbnail:</span>
+        <span>Profile Thumbnail</span>
         <input type="file" required onChange={handleFileChange} />
       </label>
 

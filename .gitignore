@@ -12,12 +12,7 @@
 /build
 
 #firebase
-.firebaserc
 .firebase
-/firebase.json
-/firestore.indexes.json
-/firestore.rules
-/storage.rules
 
 
 # misc
