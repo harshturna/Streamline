@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "streamline-7e36a",
   storageBucket: "streamline-7e36a.appspot.com",
   messagingSenderId: "ID",
-  appId: "APP_ID",
+  appId: "ID",
 };
 
 // init firebase

@@ -50,12 +50,12 @@
     }
 
     .landing__hero__text a {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin-top: 1rem;
     }
 
     .landing__hero__text a::before {
-        height: 30px;
+        height: 25px;
     }
     
   }
@@ -72,7 +72,6 @@
       }
 
       .landing__hero__text a {
-        font-size: 1.3rem;
         margin-top: 1rem;
     }
 
