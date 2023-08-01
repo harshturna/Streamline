@@ -8,7 +8,7 @@ const firebaseConfig = {
   authDomain: "streamline-7e36a.firebaseapp.com",
   projectId: "streamline-7e36a",
   storageBucket: "streamline-7e36a.appspot.com",
-  messagingSenderId: "ID",
+  messagingSenderId: "MESSAGE",
   appId: "ID",
 };
 

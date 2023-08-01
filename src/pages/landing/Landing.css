@@ -1,10 +1,11 @@
 .landing h1 {
     font-size: 4rem;
-    color: #cd55f2a5;
+    color: var(--primary-color);
     font-family: 'Caveat', cursive;
 }
 
 .landing__hero {
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -30,11 +31,11 @@
     content: "";
     position: absolute;
     left: 52%;
-    bottom: 1%;
+    bottom: 2%;
     width: 120%;
     height: 35px;
     transform: skew(-12deg) translateX(-50%) rotate(-1deg);
-    background: #cd55f2a5;
+    background: var(--primary-color);
     z-index: -1;
     border-radius: 5px;
 }
