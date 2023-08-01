@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLogin } from "../../hooks/useLogin";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 // styles
 import "./Login.css";
@@ -71,6 +72,9 @@ const Login = () => {
             Loading...
           </button>
         )}
+      </div>
+      <div className="signup-action">
+        Don't have an account? <Link to="/signup">Signup</Link>{" "}
       </div>
 
       {error && <div className="error">{error}</div>}

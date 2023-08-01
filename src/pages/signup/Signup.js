@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSignup } from "../../hooks/useSignup";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 // styles
 import "./Signup.css";
@@ -88,6 +89,11 @@ const Signup = () => {
           Loading
         </button>
       )}
+
+      <div className="login-action">
+        Already have an account? <Link to="/login">Login here</Link>{" "}
+      </div>
+
       {error && <div className="error">{error}</div>}
     </form>
   );

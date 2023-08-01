@@ -6,3 +6,9 @@
 .demo-loading {
   margin-left: auto;
 }
+
+.signup-action {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}

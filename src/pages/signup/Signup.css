@@ -7,6 +7,12 @@
   background: #fff;
 }
 
+.login-action {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
 @media secreen and (max-width: 500px) {
   .auth-form {
     font-size: 0.8rem;
