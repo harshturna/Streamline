@@ -15,7 +15,7 @@ const categories = [
   { value: "design", label: "Design" },
   { value: "finance", label: "Finance" },
   { value: "marketing", label: "Marketing" },
-  { value: "sales", lable: "Sales" },
+  { value: "sales", label: "Sales" },
 ];
 
 const Create = () => {

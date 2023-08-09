@@ -4,12 +4,12 @@ import "firebase/compat/auth";
 import "firebase/compat/storage";
 
 const firebaseConfig = {
-  apiKey: "APP_KEY",
+  apiKey: "API_KEY",
   authDomain: "streamline-7e36a.firebaseapp.com",
   projectId: "streamline-7e36a",
   storageBucket: "streamline-7e36a.appspot.com",
   messagingSenderId: "ID",
-  appId: "ID",
+  appId: "APP_ID",
 };
 
 // init firebase
