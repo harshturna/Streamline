@@ -2,7 +2,7 @@
 
 #### _A project management webapp that allows users to create and assign tasks, track progress, and collaborate with team members in real time._ 
 
-#### Visit at: (https://streamline.byharsh.com/)
+#### Visit at: https://streamline.byharsh.com/
 
 
 ### Sitemap and Features
